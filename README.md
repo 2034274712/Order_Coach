@@ -14,8 +14,8 @@
 
 ## 版权声明
 
-本项目遵循许可协议，您在使用和传播时应当遵循该协议。<br></br>
-Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under [CC BY-NC-SA 4.0 ](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+本项目遵循GPL 3.0开源协议，您在使用和传播时应当遵循该协议。<br></br>
+Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under GPL 3.0
 ## 使用教程
 
 ### 步骤 0
