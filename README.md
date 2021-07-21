@@ -37,7 +37,7 @@ Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under GPL 
 
 首先，确保你已转到**你的仓库**，即地址栏显示内容为：
 
-> https://github.com/**(你的用户名)**/Order_Coach
+> https://github.com/(你的用户名)/Order_Coach
 
 #### 2.1 获取coachID
 
@@ -97,6 +97,6 @@ def main_handler(event, context):
 ### 如遇到问题，可以按如下方式联系作者：
 
 * **QQ号：2932123724**（小号，不一定经常在线）
-* **微信号：star223333**（当然也是小号
+* **微信号：star223333**（当然也是小号）
 * **邮箱：**（听说国际友人喜欢用电子邮件？🤔）**zxy0349@vip.qq.com（这个是大号，拒绝垃圾邮件轰炸）**（不会吧不会吧，不会真的有国际友人吧？）
 * **此外，遇到bug也可以通过提交Issues来反馈。**
