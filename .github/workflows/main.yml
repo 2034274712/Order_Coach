@@ -1,0 +1,23 @@
+name: Order
+
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '45 21 * * *' # 每天在GMT标准时间21:45（北京时间5:45）时运行
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Install requests #安装requests模块
+      run: |
+        pip install requests
+    - name: order start #开始执行
+      env: 
+        #账号信息
+        USERNAME: ${{ secrets.USERNAME }} 
+        PASSWORD: ${{ secrets.PASSWORD }} 
+      run: |
+        python main.py
