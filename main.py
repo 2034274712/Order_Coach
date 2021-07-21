@@ -112,7 +112,7 @@ while True:
         pr = str(res2.text)
         print(pr)
     
-    elif pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
+    if pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
         # No.3 08:50-09:30  ps.改
         dt2 = {
             "PXResID":"",
@@ -126,7 +126,7 @@ while True:
         print(pr)
 
     # 后续如果需要增加更多备选时间段，请按照以下格式在后面继续复制粘贴   ps.记得复制粘贴时保持缩进，并且记得去掉注释符（井号）
-    # elif pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
+    # if pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
     #     # No.4 xx:xx-xx:xx
     #     dt2 = {
     #         "PXResID":"",
@@ -139,7 +139,7 @@ while True:
     #     pr = str(res2.text)
     #     print(pr)
 
-    elif pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
+    if pr == '{"d":{"Item1":false,"Item2":["预约时间段已经约满!"]}}':
         exit(1)
     # 所有备选时间段都满后，将抛出异常代码1并退出程序
 

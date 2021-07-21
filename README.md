@@ -30,6 +30,10 @@ Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under GPL 
    成功后，你的账号下将出现一个完全相同的项目。
 3. 接下来的**所有步骤**将在该项目（**你的账号中的同名项目**）下执行。
 
+### 步骤 2
 
+0. 确保你已转到**你的仓库**，地址栏显示内容为：
 
+> https://github.com/**(你的用户名)**/Order_Coach
 
+1. 
