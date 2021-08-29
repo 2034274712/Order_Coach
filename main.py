@@ -91,7 +91,7 @@ while True:
     # No.1 08:10-08:50   ps.修改时建议连注释一并修改，以免误导   pps.不过这一行本身只是注释，其实改不改，甚至删除也无所谓(´-ι_-｀)
     dt2 = {
         "PXResID":"",
-        "SubID":"2",
+        "SubID":"2",  #如果要预约科三，请把此处的“2”改为“3”，下同
         "stateID":s3 #这里第n个时间段就更改为“sn”,例如这里是第三个时间段，也就是8:10-8:50，请根据实际需要修改
     }
     res2 = requests.post(url, json = dt2, headers = hd, cookies = ck)
