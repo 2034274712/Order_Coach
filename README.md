@@ -37,7 +37,7 @@ Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under AGPL
 
 首先，确保你已转到**你的仓库**，即地址栏显示内容为：
 
-> https://github.com/*(你的用户名)*/Order_Coach
+> https://github.com/(你的用户名)/Order_Coach
 
 #### 2.1 获取coachID
 
