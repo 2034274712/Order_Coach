@@ -14,8 +14,8 @@
 
 ## 版权声明
 
-本项目遵循GPL 3.0开源协议，您在使用和传播时应当遵循该协议。<br></br>
-Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under GPL 3.0
+本项目遵循AGPL 3.0开源协议，您在使用和传播时应当遵循该协议。<br></br>
+Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under AGPL 3.0
 
 ## 使用教程
 
@@ -23,8 +23,8 @@ Order_Coach © 2021 by [ZXY ](https://github.com/zhao0349)is licensed under GPL 
 
 ### 步骤 0  声明
 
-**请确保您已阅读并理解免责声明与版权声明！<br></br>
-继续进行后续步骤，即代表您同意上述各条款；如不同意，请立即退出本项目。**
+**请确保您已阅读并理解免责声明与版权声明！**<br></br>
+**继续进行后续步骤，即代表您同意上述各条款；如不同意，请立即退出本项目。**
 
 ### 步骤 1  fork代码
 
