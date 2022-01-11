@@ -3,7 +3,7 @@ name: Order
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '45 21 * * *' # 每天在GMT标准时间21:45（北京时间5:45）时运行
+    - cron: '45 21 * * *' #每天在GMT标准时间21:45（北京时间5:45）时运行
    
 jobs:
   build:
