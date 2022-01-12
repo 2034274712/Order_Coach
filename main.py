@@ -6,7 +6,7 @@ import requests
 
 username = os.getenv('USERNAME')  # 从secret中获取身份证号
 password = os.getenv('PASSWORD')  # 从secret中获取密码
-cid = str("ygd201706050003")  # 此处为康教练的coachID，届时请自行修改
+cid = str("ygd201704040004")  # 此处为康教练的coachID，届时请自行修改
 
 # 登录并获取cookie
 logon_url = "http://yyyxjtdjx.ay001.net/Server/AccountServer.asmx/MobileLogin"
@@ -92,12 +92,12 @@ while True:
     # No.1 08:10-08:50   ps.修改时建议连注释一并修改，以免误导   pps.不过这一行本身只是注释，其实改不改，甚至删除也无所谓(´-ι_-｀)
     dt2 = {
         "PXResID": "",
-        "SubID": "2",  # 如果要预约科三，请把此处的“2”改为“3”，下同
-        "stateID": s3  # 这里第n个时间段就更改为“sn”,例如这里是第三个时间段，也就是8:10-8:50，请根据实际需要修改
+        "SubID": "3",  # 如果要预约科三，请把此处的“2”改为“3”，下同
+        "stateID": s12  # 这里第n个时间段就更改为“sn”,例如这里是第三个时间段，也就是8:10-8:50，请根据实际需要修改
     }
     res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
     res2.encoding = "utf-8"
-    print("08:10-08:50")  # 这一行代码用于输出时间段信息，修改上方sn（即时间段编号）时，建议一并修改这一行，使得与之相一致，以免误导
+    print("10：25-10:40")  # 这一行代码用于输出时间段信息，修改上方sn（即时间段编号）时，建议一并修改这一行，使得与之相一致，以免误导
     pr = str(res2.text)
     print(pr)
 
@@ -105,12 +105,12 @@ while True:
         # No.2 07:30-08:10   ps.同样，为保持一致，建议一并修改
         dt2 = {
             "PXResID": "",
-            "SubID": "2",
-            "stateID": s2  # 同理，目前这里是第二个时间段，也就是7:30-8:10，请根据实际需要修改
+            "SubID": "3",
+            "stateID": s11  # 同理，目前这里是第二个时间段，也就是7:30-8:10，请根据实际需要修改
         }
         res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
         res2.encoding = "utf-8"
-        print("07:30-08:10")  # 与上面一样，建议一并修改这一行，使得与之相一致，以免误导
+        print("10:10-10:25")  # 与上面一样，建议一并修改这一行，使得与之相一致，以免误导
         pr = str(res2.text)
         print(pr)
 
@@ -118,12 +118,12 @@ while True:
         # No.3 08:50-09:30  ps.改
         dt2 = {
             "PXResID": "",
-            "SubID": "2",
-            "stateID": s4  # 记得改
+            "SubID": "3",
+            "stateID": s13  # 记得改
         }
         res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
         res2.encoding = "utf-8"
-        print("08:50-09:30")  # 这里也记得改
+        print("10：40-10:55")  # 这里也记得改
         pr = str(res2.text)
         print(pr)
 
@@ -153,13 +153,13 @@ while True:
 
     # 上面设定了哪些时间段，这里就也同样设定哪些时间段，确保顺序一致
     # 按照上面的顺序排列这里的时间
-    if pr == '{"d":{"Item1":false,"Item2":["您已经有[08:10-08:50]的预约记录!"]}}':
+    if pr == '{"d":{"Item1":false,"Item2":["您已经有[10：25-10:40]的预约记录!"]}}':
         exit()
 
-    if pr == '{"d":{"Item1":false,"Item2":["您已经有[07:30-08:10]的预约记录!"]}}':
+    if pr == '{"d":{"Item1":false,"Item2":["您已经有[10:10-10:25]的预约记录!"]}}':
         exit()
 
-    if pr == '{"d":{"Item1":false,"Item2":["您已经有[08:50-09:30]的预约记录!"]}}':
+    if pr == '{"d":{"Item1":false,"Item2":["您已经有[10：40-10:55]的预约记录!"]}}':
         exit()
 
     # 如果有，继续增加   ps.时间必须为xx:xx格式，例如8:50必须写成08:50
