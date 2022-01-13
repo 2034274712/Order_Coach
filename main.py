@@ -93,7 +93,7 @@ while True:
     dt2 = {
         "PXResID": "",
         "SubID": "3",  # 如果要预约科三，请把此处的“2”改为“3”，下同
-        "stateID": s 3  # 这里第n个时间段就更改为“sn”,例如这里是第三个时间段，也就是8:10-8:50，请根据实际需要修改
+        "stateID": 2232848  # 这里第n个时间段就更改为“sn”,例如这里是第三个时间段，也就是8:10-8:50，请根据实际需要修改
     }
     res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
     res2.encoding = "utf-8"
@@ -106,7 +106,7 @@ while True:
         dt2 = {
             "PXResID": "",
             "SubID": "3",
-            "stateID": s 4  # 同理，目前这里是第二个时间段，也就是7:30-8:10，请根据实际需要修改
+            "stateID": 2232847  # 同理，目前这里是第二个时间段，也就是7:30-8:10，请根据实际需要修改
         }
         res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
         res2.encoding = "utf-8"
@@ -119,7 +119,7 @@ while True:
         dt2 = {
             "PXResID": "",
             "SubID": "3",
-            "stateID": s5  # 记得改
+            "stateID": 2232849  # 记得改
         }
         res2 = requests.post(url, json=dt2, headers=hd, cookies=ck)
         res2.encoding = "utf-8"
